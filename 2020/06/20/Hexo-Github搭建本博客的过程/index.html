@@ -42,7 +42,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-第一篇正式的博文"
+  id="post-Hexo-Github搭建本博客的过程"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -60,11 +60,11 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2020/06/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%AD%A3%E5%BC%8F%E7%9A%84%E5%8D%9A%E6%96%87/" class="article-date">
+      <a href="/2020/06/20/Hexo-Github%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/" class="article-date">
   <time datetime="2020-06-19T20:59:32.000Z" itemprop="datePublished">2020-06-20</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
   </div>
   
 <div class="word_count">
@@ -72,7 +72,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">245</span>
+            <span class="post-count">1.2k</span>
         </span>
     </span>
 
@@ -81,7 +81,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">4 min</span>
         </span>
     </span>
 </div>
@@ -96,15 +96,49 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>捯饬了两个半天，小白的个人网页终于有点样子地上线了，其实现在也不知道码什么，也没想好具体用这个博客干什么，但是这个时候总要写点什么吧。。。</p>
+  <p>其实我也是照着别的大佬详细的教程搭出来的，但过程并没有那么顺遂，菜是原罪。</p>
 <a id="more"></a>
-
-<h2 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h2><p>既然是github托管的博客，那技术肯定是少不了的。目前刚开始看机器学习的一些内容，之后应该会前端、Java二选一。我还是蛮菜的，写的东西对于别人应该不会有太大价值，主要还是记录自己的学习过程。</p>
-<h2 id="心理学"><a href="#心理学" class="headerlink" title="心理学"></a>心理学</h2><p>如果不考虑挣面包的事，我应该就去学心理学了。不过也没事啦，还是可以自学一下的。有空的话记录一下心理学相关的学习内容和感悟。</p>
-<h2 id="瞎哔叨"><a href="#瞎哔叨" class="headerlink" title="瞎哔叨"></a>瞎哔叨</h2><p>我是话痨，大概有空会在这里瞎写一点个人想法。</p>
-<h2 id="其他还有什么我还没想好"><a href="#其他还有什么我还没想好" class="headerlink" title="其他还有什么我还没想好"></a>其他还有什么我还没想好</h2><p>先溜了<br>皮神镇楼</p>
-<p><img src="https://i.loli.net/2020/06/20/gFEiqXchKbQHCPo.png" alt="Ash_Pikachu.png"></p>
- 
+<p>主要借鉴的以下三篇：</p>
+<blockquote>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">超详细Hexo+Github博客搭建小白教程</a></li>
+<li><a href="https://zhangslob.github.io/2017/02/28/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8CHexo-Github/" target="_blank" rel="noopener">教你免费搭建个人博客，Hexo&amp;Github</a></li>
+<li><a href="https://shen-yu.gitee.io/2019/ayer/" target="_blank" rel="noopener">Ayer中文说明</a>(这个是我选的博客主题，说明详细、页面简洁美观，深得我心，不想折腾的可以选这个)</li>
+</ul>
+</blockquote>
+<p><strong>系统：windows 10 64位，编辑器：sublime text3，控制台：git</strong></p>
+<h2 id="1-准备阶段"><a href="#1-准备阶段" class="headerlink" title="1.准备阶段"></a>1.准备阶段</h2><p>安装hexo的前提是Node.js（Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本）和Git</p>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>我是<a href="https://link.zhihu.com/?target=https%3A//nodejs.org/dist/v9.11.1/node-v9.11.1-x64.msi">官网</a>下载,配置默认。<br>cmd里输入<code>node -v</code>和<code>npm -v</code>测试是否安装成功。</p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>下载链接<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">https://github.com/waylau/git-for-win</a><br>cmd输入<code>git --version</code>验证是否安装成功</p>
+<h3 id="github上Create-a-new-repository"><a href="#github上Create-a-new-repository" class="headerlink" title="github上Create a new repository"></a>github上Create a new repository</h3><p><img src="https://i.loli.net/2020/06/20/Sm8LORVryZjzWnN.png" alt="screenshot-github.com-2020.06.20-10_35_34.png"><br>命名为<code>yourname.github.io</code>，yourname是你自己github的名字，初始化readme勾选。<br><img src="https://i.loli.net/2020/06/20/fvAteVzDgsBL29a.png" alt="screenshot-github.com-2020.06.20-10_40_27.png"><br>建立完进入setting设置，选择一个主题后点击链接就可看到自己的主页了。<br><img src="https://i.loli.net/2020/06/20/eYyxOTIwZBFA4vc.png" alt="screenshot-github.com-2020.06.20-11_00_41.png"></p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo使用Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br>本地新建一个文件夹，用作存放博客的文件，在该目录下右击鼠标选择<code>Git Bash Here</code>，打开git的控制台窗口，开始安装hexo。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p><strong>我在这里报了关于npm的错</strong><br>借鉴了<a href="https://cnodejs.org/topic/4f9904f9407edba21468f31e" target="_blank" rel="noopener">使用npm安装一些包失败了的看过来（npm国内镜像介绍）</a><br>我选择了方案一，好用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org </span><br><span class="line">$ npm info underscore （如果上面配置正确这个命令会有字符串response）</span><br></pre></td></tr></table></figure>
+<p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p>
+<h2 id="2-设置"><a href="#2-设置" class="headerlink" title="2.设置"></a>2.设置</h2><h4 id="初始化文件夹"><a href="#初始化文件夹" class="headerlink" title="初始化文件夹"></a>初始化文件夹</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure>
+<p>成功会提示 <code>INFO Start blogging with Hexo!</code></p>
+<h4 id="生成静态网页"><a href="#生成静态网页" class="headerlink" title="生成静态网页"></a>生成静态网页</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h4 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>提示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http:&#x2F;&#x2F;localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<p>浏览器打开<a href="http://localhost:4000可以看到网站的页面，当然这个是本地文件。可以看到自带一篇Hello">http://localhost:4000可以看到网站的页面，当然这个是本地文件。可以看到自带一篇Hello</a> world的文章。<br><strong>按<code>Ctrl+C</code>关闭本地服务器，继续后续操作。</strong> 我一开始忘记了这一步。。。</p>
+<h4 id="连接Github与本地"><a href="#连接Github与本地" class="headerlink" title="连接Github与本地"></a>连接Github与本地</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;yourname&quot;     #yourname是你自己的github名称</span><br><span class="line">$ git config --global user.email &quot;youremail&quot;      #youremail是你自己github绑定的邮箱</span><br></pre></td></tr></table></figure>
+<h4 id="生成密钥SSH-key"><a href="#生成密钥SSH-key" class="headerlink" title="生成密钥SSH key"></a>生成密钥SSH key</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;youremail&quot;      #youremail是你自己github绑定的邮箱</span><br><span class="line">$ cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>展示的是public key,复制下来，Sign in to GitHub：<a href="https://github.com/settings/ssh" target="_blank" rel="noopener">https://github.com/settings/ssh</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">New SSH key </span><br><span class="line">Title：blog</span><br><span class="line">Key：输入刚才复制的—— Add SSH key</span><br></pre></td></tr></table></figure>
+<h4 id="输入ssh-T-git-github-com验证是否成功。"><a href="#输入ssh-T-git-github-com验证是否成功。" class="headerlink" title="输入ssh -T git@github.com验证是否成功。"></a>输入<code>ssh -T git@github.com</code>验证是否成功。</h4><h2 id="3-配置博客"><a href="#3-配置博客" class="headerlink" title="3.配置博客"></a>3.配置博客</h2><p>打开博客根目录下的_config.yml文件，修改参数信息。<br><img src="https://i.loli.net/2020/06/20/EJC7ozArvtexXPK.jpg" alt="ftfyjdtu.JPG"><br><img src="https://i.loli.net/2020/06/20/UwAgMfm8OpnGqNa.jpg" alt="捕获.JPG"></p>
+<h2 id="4-发布文章"><a href="#4-发布文章" class="headerlink" title="4.发布文章"></a>4.发布文章</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;article_name&quot;   #article_name自取</span><br></pre></td></tr></table></figure>
+<p>会提示你新建了一个.md的文件，这是一个markdown文件，对此进行编辑，过程本文不表。<br>关于markdown,我没有选用MarkdownPad进行编辑，因为在win10上运行有点问题，无法使用实时预览功能，需要再安装一个文件，但那样显得冗余。<br>我用的是一款有实时预览功能的在线编辑器<a href="https://dillinger.io/" target="_blank" rel="noopener">https://dillinger.io/</a><br>编辑完之后发布文章，操作如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo c</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<p>之后会弹出github的登录框，登录后输入自己博客域名就可以看到刚刚的文章已经发布上去了。<br>此时的博客比较简陋，功能单一，作为对前端一无所知的小白，选择使用现成的主题。</p>
+<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><blockquote>
+<p><a href="https://shen-yu.gitee.io/2019/ayer/" target="_blank" rel="noopener">Ayer中文说明</a><br>关于这款主题的使用，作者的说明已经十分详细。我记录一下我所进行的修改。</p>
+</blockquote>
+<p><strong>修改了主页左侧导航栏的内容，进行了删减，只保留了图中四项。</strong><br><img src="https://i.loli.net/2020/06/20/FmCMNU6cwzJkOvG.png" alt="image.png"></p>
+<p><strong>打赏、RSS订阅、首页fork主题等功能均在主题下的配置文件里删除了</strong></p>
+<p><strong>分类和标签的使用</strong><br><img src="https://i.loli.net/2020/06/20/N7bWX5cuvThoUCY.png" alt="image.png"><br>在文章编辑中添加，格式如图<br>我的markdown是在看了作者文章的md文件后学会的，基本功能用着还行。<br>修改好之后再部署一遍就可以看到带有新主题的个人博客了，不过我左边菜单栏删掉太多东西，想把字放大一点，整体往中间靠一点，但是并不懂前端的东西，让修改css文件无从下手，只能不了了之，有心人看到可以告诉我。</p>
+<h2 id="以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333"><a href="#以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333" class="headerlink" title="以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333"></a>以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333</h2> 
       <!-- reward -->
       
     </div>
@@ -166,12 +200,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/06/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%AD%A3%E5%BC%8F%E7%9A%84%E5%8D%9A%E6%96%87/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/06/20/Hexo-Github%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag">随笔</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -179,11 +213,15 @@
    
   <nav class="article-nav">
     
-    
-      <a href="/2020/06/20/Hexo-Github%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">第一篇正式的博文</div>
+      <a href="/2020/06/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%AD%A3%E5%BC%8F%E7%9A%84%E5%8D%9A%E6%96%87/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            第一篇正式的博文
+          
+        </div>
       </a>
+    
     
   </nav>
 
