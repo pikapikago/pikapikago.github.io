@@ -20,7 +20,7 @@
       </tags>
   </entry>
   <entry>
-    <title>第一篇正式的博文</title>
+    <title>Hexo-Github搭建本博客的过程</title>
     <url>/2020/06/20/Hexo-Github%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<p>其实我也是照着别的大佬详细的教程搭出来的，但过程并没有那么顺遂，菜是原罪。</p>
 <a id="more"></a>
@@ -64,7 +64,7 @@
 <p><strong>修改了主页左侧导航栏的内容，进行了删减，只保留了图中四项。</strong><br><img src="https://i.loli.net/2020/06/20/FmCMNU6cwzJkOvG.png" alt="image.png"></p>
 <p><strong>打赏、RSS订阅、首页fork主题等功能均在主题下的配置文件里删除了</strong></p>
 <p><strong>分类和标签的使用</strong><br><img src="https://i.loli.net/2020/06/20/N7bWX5cuvThoUCY.png" alt="image.png"><br>在文章编辑中添加，格式如图<br>我的markdown是在看了作者文章的md文件后学会的，基本功能用着还行。<br>修改好之后再部署一遍就可以看到带有新主题的个人博客了，不过我左边菜单栏删掉太多东西，想把字放大一点，整体往中间靠一点，但是并不懂前端的东西，让修改css文件无从下手，只能不了了之，有心人看到可以告诉我。</p>
-<h2 id="以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333"><a href="#以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333" class="headerlink" title="以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333"></a>以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333</h2>]]></content>
+<h3 id="以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333"><a href="#以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333" class="headerlink" title="以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333"></a>以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333</h3>]]></content>
       <categories>
         <category>技术</category>
       </categories>
