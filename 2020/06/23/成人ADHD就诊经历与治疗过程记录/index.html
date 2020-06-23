@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Hexo-Github搭建本博客的过程 |  进击的皮卡丘
+    成人ADHD就诊经历与治疗过程记录 |  进击的皮卡丘
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -42,7 +42,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Hexo-Github搭建本博客的过程"
+  id="post-成人ADHD就诊经历与治疗过程记录"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -53,18 +53,18 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Hexo-Github搭建本博客的过程
+  成人ADHD就诊经历与治疗过程记录
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/06/20/Hexo-Github%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/" class="article-date">
-  <time datetime="2020-06-20T05:43:03.000Z" itemprop="datePublished">2020-06-20</time>
+      <a href="/2020/06/23/%E6%88%90%E4%BA%BAADHD%E5%B0%B1%E8%AF%8A%E7%BB%8F%E5%8E%86%E4%B8%8E%E6%B2%BB%E7%96%97%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time datetime="2020-06-23T06:24:01.000Z" itemprop="datePublished">2020-06-23</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+    <a class="article-category-link" href="/categories/%E5%BF%83%E7%90%86/">心理</a>
   </div>
   
 <div class="word_count">
@@ -72,7 +72,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">1.2k</span>
+            <span class="post-count">2.8k</span>
         </span>
     </span>
 
@@ -81,7 +81,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">4 min</span>
+            <span class="post-count">9 min</span>
         </span>
     </span>
 </div>
@@ -96,49 +96,26 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>其实我也是照着别的大佬详细的教程搭出来的，但过程并没有那么顺遂，菜是原罪。</p>
+  <p><strong><em>一个小镇废柴做题家最大的不幸之一就是得了ADHD，意识到畸形的教育和ADHD带给自己的影响后，废柴的人生看到了一丝起色。</em></strong></p>
 <a id="more"></a>
-<p>主要借鉴的以下三篇：</p>
-<blockquote>
-<ul>
-<li><a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">超详细Hexo+Github博客搭建小白教程</a></li>
-<li><a href="https://zhangslob.github.io/2017/02/28/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8CHexo-Github/" target="_blank" rel="noopener">教你免费搭建个人博客，Hexo&amp;Github</a></li>
-<li><a href="https://shen-yu.gitee.io/2019/ayer/" target="_blank" rel="noopener">Ayer中文说明</a>(这个是我选的博客主题，说明详细、页面简洁美观，深得我心，不想折腾的可以选这个)</li>
+<h2 id="关于我与ADHD"><a href="#关于我与ADHD" class="headerlink" title="关于我与ADHD"></a>关于我与ADHD</h2><blockquote>
+<h4 id="ADHD对我的影响如下："><a href="#ADHD对我的影响如下：" class="headerlink" title="ADHD对我的影响如下："></a>ADHD对我的影响如下：</h4><ul>
+<li>任务不专注，错误多，有时根本无法完成。</li>
+<li>难以完成任务的整个流程，中途会不由自主地穿插别的进程。</li>
+<li>执行能力受损，也就是–变懒。</li>
+<li>焦虑，情绪差，尤其是濒临deadline，更加难以专注完成任务。</li>
 </ul>
 </blockquote>
-<p><strong>系统：windows 10 64位，编辑器：sublime text3，控制台：git</strong></p>
-<h2 id="1-准备阶段"><a href="#1-准备阶段" class="headerlink" title="1.准备阶段"></a>1.准备阶段</h2><p>安装hexo的前提是Node.js（Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本）和Git</p>
-<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>我是<a href="https://link.zhihu.com/?target=https%3A//nodejs.org/dist/v9.11.1/node-v9.11.1-x64.msi">官网</a>下载,配置默认。<br>cmd里输入<code>node -v</code>和<code>npm -v</code>测试是否安装成功。</p>
-<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>下载链接<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">https://github.com/waylau/git-for-win</a><br>cmd输入<code>git --version</code>验证是否安装成功</p>
-<h3 id="github上Create-a-new-repository"><a href="#github上Create-a-new-repository" class="headerlink" title="github上Create a new repository"></a>github上Create a new repository</h3><p><img src="https://i.loli.net/2020/06/20/Sm8LORVryZjzWnN.png" alt="screenshot-github.com-2020.06.20-10_35_34.png"><br>命名为<code>yourname.github.io</code>，yourname是你自己github的名字，初始化readme勾选。<br><img src="https://i.loli.net/2020/06/20/fvAteVzDgsBL29a.png" alt="screenshot-github.com-2020.06.20-10_40_27.png"><br>建立完进入setting设置，选择一个主题后点击链接就可看到自己的主页了。<br><img src="https://i.loli.net/2020/06/20/eYyxOTIwZBFA4vc.png" alt="screenshot-github.com-2020.06.20-11_00_41.png"></p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo使用Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br>本地新建一个文件夹，用作存放博客的文件，在该目录下右击鼠标选择<code>Git Bash Here</code>，打开git的控制台窗口，开始安装hexo。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<p><strong>我在这里报了关于npm的错</strong><br>借鉴了<a href="https://cnodejs.org/topic/4f9904f9407edba21468f31e" target="_blank" rel="noopener">使用npm安装一些包失败了的看过来（npm国内镜像介绍）</a><br>我选择了方案一，好用。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org </span><br><span class="line">$ npm info underscore （如果上面配置正确这个命令会有字符串response）</span><br></pre></td></tr></table></figure>
-<p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p>
-<h2 id="2-设置"><a href="#2-设置" class="headerlink" title="2.设置"></a>2.设置</h2><h4 id="初始化文件夹"><a href="#初始化文件夹" class="headerlink" title="初始化文件夹"></a>初始化文件夹</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure>
-<p>成功会提示 <code>INFO Start blogging with Hexo!</code></p>
-<h4 id="生成静态网页"><a href="#生成静态网页" class="headerlink" title="生成静态网页"></a>生成静态网页</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<h4 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>提示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http:&#x2F;&#x2F;localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-<p>浏览器打开<a href="http://localhost:4000可以看到网站的页面，当然这个是本地文件。可以看到自带一篇Hello">http://localhost:4000可以看到网站的页面，当然这个是本地文件。可以看到自带一篇Hello</a> world的文章。<br><strong>按<code>Ctrl+C</code>关闭本地服务器，继续后续操作。</strong> 我一开始忘记了这一步。。。</p>
-<h4 id="连接Github与本地"><a href="#连接Github与本地" class="headerlink" title="连接Github与本地"></a>连接Github与本地</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;yourname&quot;     #yourname是你自己的github名称</span><br><span class="line">$ git config --global user.email &quot;youremail&quot;      #youremail是你自己github绑定的邮箱</span><br></pre></td></tr></table></figure>
-<h4 id="生成密钥SSH-key"><a href="#生成密钥SSH-key" class="headerlink" title="生成密钥SSH key"></a>生成密钥SSH key</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;youremail&quot;      #youremail是你自己github绑定的邮箱</span><br><span class="line">$ cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>展示的是public key,复制下来，Sign in to GitHub：<a href="https://github.com/settings/ssh" target="_blank" rel="noopener">https://github.com/settings/ssh</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">New SSH key </span><br><span class="line">Title：blog</span><br><span class="line">Key：输入刚才复制的—— Add SSH key</span><br></pre></td></tr></table></figure>
-<h4 id="输入ssh-T-git-github-com验证是否成功。"><a href="#输入ssh-T-git-github-com验证是否成功。" class="headerlink" title="输入ssh -T git@github.com验证是否成功。"></a>输入<code>ssh -T git@github.com</code>验证是否成功。</h4><h2 id="3-配置博客"><a href="#3-配置博客" class="headerlink" title="3.配置博客"></a>3.配置博客</h2><p>打开博客根目录下的_config.yml文件，修改参数信息。<br><img src="https://i.loli.net/2020/06/20/EJC7ozArvtexXPK.jpg" alt="ftfyjdtu.JPG"><br><img src="https://i.loli.net/2020/06/20/UwAgMfm8OpnGqNa.jpg" alt="捕获.JPG"></p>
-<h2 id="4-发布文章"><a href="#4-发布文章" class="headerlink" title="4.发布文章"></a>4.发布文章</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;article_name&quot;   #article_name自取</span><br></pre></td></tr></table></figure>
-<p>会提示你新建了一个.md的文件，这是一个markdown文件，对此进行编辑，过程本文不表。<br>关于markdown,我没有选用MarkdownPad进行编辑，因为在win10上运行有点问题，无法使用实时预览功能，需要再安装一个文件，但那样显得冗余。<br>我用的是一款有实时预览功能的在线编辑器<a href="https://dillinger.io/" target="_blank" rel="noopener">https://dillinger.io/</a><br>编辑完之后发布文章，操作如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo c</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>之后会弹出github的登录框，登录后输入自己博客域名就可以看到刚刚的文章已经发布上去了。<br>此时的博客比较简陋，功能单一，作为对前端一无所知的小白，选择使用现成的主题。</p>
-<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><blockquote>
-<p><a href="https://shen-yu.gitee.io/2019/ayer/" target="_blank" rel="noopener">Ayer中文说明</a><br>关于这款主题的使用，作者的说明已经十分详细。我记录一下我所进行的修改。</p>
-</blockquote>
-<p><strong>修改了主页左侧导航栏的内容，进行了删减，只保留了图中四项。</strong><br><img src="https://i.loli.net/2020/06/20/FmCMNU6cwzJkOvG.png" alt="image.png"></p>
-<p><strong>打赏、RSS订阅、首页fork主题等功能均在主题下的配置文件里删除了</strong></p>
-<p><strong>分类和标签的使用</strong><br><img src="https://i.loli.net/2020/06/20/N7bWX5cuvThoUCY.png" alt="image.png"><br>在文章编辑中添加，格式如图<br>我的markdown是在看了作者文章的md文件后学会的，基本功能用着还行。<br>修改好之后再部署一遍就可以看到带有新主题的个人博客了，不过我左边菜单栏删掉太多东西，想把字放大一点，整体往中间靠一点，但是并不懂前端的东西，让修改css文件无从下手，只能不了了之，有心人看到可以告诉我。</p>
-<h3 id="以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333"><a href="#以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333" class="headerlink" title="以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333"></a>以上就是我捯饬两个半天的内容，毫无技术含量，但略有成就感233333</h3> 
+<p>很长一段时间我的自我评价很低：极度懒惰，自控能力极差。偏偏我又有一些野心，奈何执行能力也就这样了，所以陷入了自我挣扎的漩涡中。后来弯弯绕绕知道了ADHD，之后很长一段时间里我又开始困惑于：我到底是不是ADHD？我是不是只是一个天生懒惰自控能力差的笨蛋？ADHD到底是不是我为自己的无能开脱的一个借口？<br>大概一年前，调整了心态，开始正视这个问题，开始用尽量客观的态度审视自己注意力方面的问题。后来下定决心去了医院，经过诊断，我确实是ADHD，做访谈的医生说我挺明显的，然后确诊的医生有说我执行功能部分受损了。<br>不管是不是为自己开脱，被诊断ADHD让我的心态变好很多。</p>
+<h2 id="成人ADHD上海新华医院就诊经历"><a href="#成人ADHD上海新华医院就诊经历" class="headerlink" title="成人ADHD上海新华医院就诊经历"></a>成人ADHD上海新华医院就诊经历</h2><p><a href="https://www.adhd.website/archives/99" target="_blank" rel="noopener">中国可确诊ADHD注意力缺陷多动障碍的医院名单</a><br>国内能诊断成人ADHD的医院着实不太多，有的人会遇到误诊和不合理开药的问题，我兜兜转转最终去了新华医院。</p>
+<h4 id="就诊流程"><a href="#就诊流程" class="headerlink" title="就诊流程"></a>就诊流程</h4><p>初诊的内容主要就是聊天，医生会问你的相关经历，回忆小时候的一些症状，还有家庭相关，如果觉得你可能是ADHD的话，会给你开单子做检查（抽血、脑电波、成人韦氏智商测试、访谈），还有一堆心理情况评估的量表，然后分两种情况：<br><strong>1. 当天就能确诊</strong><br>因为检查都要排队做的，在我看的众多经验贴里，有两位成人ADHD当天就给确诊了，一位因为症状特别明显+有其他医院的就诊经历，一位因为外地匆匆赶来急着走给加急做了检查。<br><strong>2. 需要二次就诊</strong><br>大多数都要二次就诊，成人韦氏和ADHD相关的访谈都是需要提前预约的。出诊后医生会开单子让你缴费，之后拿着单子去11楼找邸护士（一位和善的老太太），邸护士会为你安排时间，我当时看到她的小本本都排满了，我本人是排到了两周后。<br>所以两周后我又去了一趟，因为怕排队所以早早地到了十一楼拿着单子找邸护士并且让她帮我加了张劲松医生的号。下午上班后没多久就为我安排了访谈和成人韦氏，做访谈的小姐姐可爱，好评！做完之后在诊室门口等着，五分钟的样子就能出报告。然后拿着单子找张劲松医生（此处有漫长的排队过程）。张劲松医生看了报告，确诊了我的ADHD，大概讲了报告的一些结论，比如有提到执行功能受损，然后给我开了药，然后我开开心心回家了。</p>
+<h4 id="关于挂号"><a href="#关于挂号" class="headerlink" title="关于挂号"></a>关于挂号</h4><p>新华医院可以看成人ADHD的医生据我所知有张劲松医生、夏卫萍医生、帅澜医生，张劲松医生特别出名，找她看的人络绎不绝。上面我也有提到，初诊的主要内容是聊天，有个大概判断，所以其实可以直接挂儿童心理科普通号。我因为比较迷恋权威，所以网上预约的张劲松医生的号。需要注意的是，张劲松医生的号有普通专家号和特需门诊的号，成人ADHD需要挂那个特需门诊的号。<br><strong><em>如果有二次就诊，依旧需要挂号，尽量网上提前预约。</em></strong> 我因为初诊比较顺利，麻痹大意没有关注复诊挂号的事，导致去了当天才知道还有挂号这么一回事。当时我问护士的意思，她的口气是不一定非要挂张劲松医生的号，普通号也能看报告出结论。当然，我又迷信了权威，所以我求着邸护士帮我加了号，但因为是加的号，所以我排到了很后面，等到我在大厅表演多动发作。所以，<strong><em>二次就诊想找张劲松医生的朋友，请提前网上预约！</em></strong></p>
+<h2 id="治疗过程"><a href="#治疗过程" class="headerlink" title="治疗过程"></a>治疗过程</h2><p>ADHD的治疗分为药物治疗和非药物治疗（CBT等），因为我有迅速改变状态的刚需，所以选择了药物治疗。中国大陆提供的治疗ADHD的药物有两种：择思达和专注达。这两种药物的介绍我就不写了，记录一下我的使用经验，供需要的人参考。<strong><em>注意：我提供的是个人使用经验，只是对我治疗过程的描述，不是处方性质的医生建议。</em></strong></p>
+<h4 id="盐酸托莫西汀–择思达"><a href="#盐酸托莫西汀–择思达" class="headerlink" title="盐酸托莫西汀–择思达"></a>盐酸托莫西汀–择思达</h4><p><strong>1.效果</strong>：曾经在我状态极其低迷时，是盐酸托莫西汀救了我。定时服用择思达+咖啡+跑步，坚持了两个月，我的状态得到了极大的改善，不再萎靡不振颠倒黑白，重新建立了生活秩序。我并不专业，有些原理并不懂，但将近一年的使用得出的结论就是择思达真的改善了我的执行能力。在那明显改善的两个月后，恰逢暑假来临天气很热，我把跑步停了开始早出晚归去自习室自习，此后变成了咖啡+择思达组合，这个暑假是我最高光的一个暑假，我完成的任务量是空前的，是前两年暑假完成任务量之和的两倍多吧，我很惊喜。早上一杯黑咖啡一颗择思达，开启美好的一天。<br><strong>2.剂量</strong>：择思达的剂量是要慢慢加上去的，一上来就是40mg副作用会很明显。因为我比较谨慎，所以前两个月我都是一天10mg，身体适应得很好，之后10mg一个坡度慢慢加，最终加到的量是根据体重计算的，10mg每10kg，70kg就是每天70mg这样，貌似说每天最多100mg。药物爬坡时我的使用效果挺明显的，大脑变得清楚，不再一片混沌，执行能力提升，专注的时间变长。在剂量稳定后，也有可能是跑步停掉的原因，执行能力又变差了，勉强维持，每天的学习量。<br><strong>3.副作用</strong>：恶心想吐（不要空腹吃药）、口渴（顺便督促自己喝水）、食欲低下（对美食的思念变低，填饱肚子即可）、睡眠变浅（多梦、醒得早）、情绪低落，还有人反映吃了会困，因为我是配合咖啡服用所以不困。吃久了之后，恶心想吐彻底消失，口渴有点，食欲低下变成常态，睡眠有慢慢恢复到平常水平。着重讲一下情绪低落这个副作用，择思达一开始是开发用于抑郁症的治疗，后来发现对ADHD有效果。有人说吃了之后抑郁，我觉得不是抑郁，而是把你的情绪抹除掉，不会过度悲伤，不会焦虑，不会狂喜，情绪波动变得很小。一开始有点难受，后来也习惯了，但我想说的是习惯了不代表这个副作用没有了。在我停药之后，我突然发现变得很开心，整个人充满生机与活力，欲望也由此变多，生活仿佛多彩了一点，当然也更无序了。所以我有一点怀疑就是，如果长期用药会不会改变人的性格？</p>
+<h4 id="盐酸哌甲酯缓释片–专注达"><a href="#盐酸哌甲酯缓释片–专注达" class="headerlink" title="盐酸哌甲酯缓释片–专注达"></a>盐酸哌甲酯缓释片–专注达</h4><p><strong>1.效果</strong>：享受专注与平静，效果强于择思达，刚开始吃的时候感觉专注任务的能力得到了明显提升，并且和择思达不一样的感受就是感觉思维异常清晰，能够执行以前无法启动的复杂任务，执行能力提升上与择思达无异。<br><strong>2.剂量</strong>：18mg每天，有的人时间久了会耐药，需要加到36mg每天。<br><strong>3.副作用</strong>：心率提升（就别喝太多咖啡了，不然感觉心脏受不了）、食欲低下（是真的不想吃饭），我觉得挺好的，副作用比择思达小很多，最主要的是心情不会低落，这点还是蛮不错的。</p>
+<h4 id="关于药物我想说的："><a href="#关于药物我想说的：" class="headerlink" title="关于药物我想说的："></a>关于药物我想说的：</h4><p>因为我加过很多群，看过太多人为了考试求药的。很多人在群里诉说自己生活的种种不顺，讲自己的一些症状，什么都往ADHD上面靠，什么都归咎为ADHD。这个还是蛮无奈的，药物滥用导致ADHD被污名化。好多人觉得ADHD的药（尤其是专注达）就是神药，可以让人变聪明，让人执行能力迅速提高，一下子就能完成以前完不成的任务，或者说让学生成绩迅速提高。我只能很抱歉地说，如果不是ADHD引起的问题，吃药不能改变你的生活。就好比是一排人射击，ADHD带来的缺陷比作近视，药物就像是眼镜，短暂弥补一部分缺失，但不会说让你射击水平超常。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>走过很多弯路，经历漫长的挣扎，有幸还是找到了一条可走的路，然后鼓起勇气写下自己的经历。<br>感慨还是颇多的，但大多也就自己呵呵一笑过去了。哪怕被确诊后，关于ADHD的羞耻和自我怀疑也时常出现，看到依旧糟糕的自己会怀疑自己到底有没有病，也耻于让别人知道我有ADHD还需要吃药。以前对于去医院确诊也很犹豫，总想着去医院确诊留下记录怎么办？开了静一红处方会不会影响以后？医生会不会觉得我在装病？（没有诊断能力的医生真的会认为成人ADHD是在装病）。<br>还是要破除对ADHD的羞耻感，正视确诊和治疗的必要性，不要恐惧去确诊，一事无成的废柴人生毫无意义。此处强调，去大医院确诊！有条件还是去北大六院、上海新华、深圳康宁……<br>码这么多字，对我来讲真的很不容易，其实还有一些想说的，但是我忘了，那就这样吧……</p>
+ 
       <!-- reward -->
       
     </div>
@@ -200,12 +177,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/06/20/Hexo-Github%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/06/23/%E6%88%90%E4%BA%BAADHD%E5%B0%B1%E8%AF%8A%E7%BB%8F%E5%8E%86%E4%B8%8E%E6%B2%BB%E7%96%97%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BF%83%E7%90%86/" rel="tag">心理</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag">随笔</a></li></ul>
 
     </footer>
   </div>
@@ -213,19 +190,10 @@
    
   <nav class="article-nav">
     
-      <a href="/2020/06/23/%E6%88%90%E4%BA%BAADHD%E5%B0%B1%E8%AF%8A%E7%BB%8F%E5%8E%86%E4%B8%8E%E6%B2%BB%E7%96%97%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            成人ADHD就诊经历与治疗过程记录
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/06/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%AD%A3%E5%BC%8F%E7%9A%84%E5%8D%9A%E6%96%87/" class="article-nav-link">
+      <a href="/2020/06/20/Hexo-Github%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">第一篇正式的博文</div>
+        <div class="article-nav-title">Hexo-Github搭建本博客的过程</div>
       </a>
     
   </nav>
