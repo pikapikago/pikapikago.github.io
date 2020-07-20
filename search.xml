@@ -96,6 +96,8 @@
 <li>三、习题</li>
 </ul>
 </blockquote>
+<a id="more"></a>
+
 <h2 id="一、变量、运算符与数据类型"><a href="#一、变量、运算符与数据类型" class="headerlink" title="一、变量、运算符与数据类型"></a>一、变量、运算符与数据类型</h2><h3 id="1-1-注释"><a href="#1-1-注释" class="headerlink" title="1.1 注释"></a>1.1 注释</h3><ul>
 <li><code>#</code> 单行注释</li>
 <li><code>&quot;&quot;&quot; &quot;&quot;&quot;</code> 或 <code>&#39;&#39;&#39; &#39;&#39;&#39;</code> 区间注释</li>
