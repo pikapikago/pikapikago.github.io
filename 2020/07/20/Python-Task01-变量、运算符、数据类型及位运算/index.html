@@ -72,7 +72,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">1.2k</span>
+            <span class="post-count">1.5k</span>
         </span>
     </span>
 
@@ -81,7 +81,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">4 min</span>
+            <span class="post-count">5 min</span>
         </span>
     </span>
 </div>
@@ -181,7 +181,35 @@
 </ul>
 </blockquote>
 <hr>
-<h2 id="三、习题"><a href="#三、习题" class="headerlink" title="三、习题"></a>三、习题</h2><p><strong>3.1 怎样对python中的代码进行注释？</strong><br><code>#</code> 单行注释<br><code>&quot;&quot;&quot; &quot;&quot;&quot;</code> 或 <code>&#39;&#39;&#39; &#39;&#39;&#39;</code> 区间注释<br><strong>3.2 python有哪些运算符，这些运算符的优先级是怎样的？</strong><br>算数运算符、比较运算符、逻辑运算符、位运算符等<br>a. 一元运算符优于二元运算符。如正负号。<br>b. 先算术运算，后移位运算，最后位运算。<br>c. 逻辑运算最后结合<br><strong>3.3 python 中 <code>is</code> , <code>is not</code> 与<code>==</code> , <code>!=</code> 的区别是什么？</strong><br><code>is</code>和<code>is not</code>比较的是两个变量的内存地址,相对比<code>==</code>、<code>！=</code>比较的是两个变量的值。<br><strong>3.4 python 中包含哪些数据类型？这些数据类型之间如何转换？</strong><br>int float bool<br>转换为整型 int(x, base=10)<br>转换为字符串 str(object=’’)<br>转换为浮点型 float(x)<br><strong>3.5 leetcode 习题136 只出现一次的数字<br>给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。<br>尝试使用位运算解决此题。</strong></p>
+<h2 id="二、位运算"><a href="#二、位运算" class="headerlink" title="二、位运算"></a>二、位运算</h2><h3 id="2-1-原码、反码、补码"><a href="#2-1-原码、反码、补码" class="headerlink" title="2.1 原码、反码、补码"></a>2.1 原码、反码、补码</h3><p>计算机内部使用补码</p>
+<h3 id="2-2-位运算操作"><a href="#2-2-位运算操作" class="headerlink" title="2.2 位运算操作"></a>2.2 位运算操作</h3><p> <code>~</code> <code>&amp;</code> <code>|</code> <code>^</code> <code>&lt;&lt;</code> <code>&gt;&gt;</code><br>异或满足交换律和结合律</p>
+<h3 id="2-3-利用位运算实现快速计算"><a href="#2-3-利用位运算实现快速计算" class="headerlink" title="2.3 利用位运算实现快速计算"></a>2.3 利用位运算实现快速计算</h3><ul>
+<li>通过<code>&lt;&lt;</code>、<code>&gt;&gt;</code>快速计算2的倍数问题<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">n &lt;&lt; 1 -&gt; 计算 n*2</span><br><span class="line">n &gt;&gt; 1 -&gt; 计算 n&#x2F;2，负奇数的运算不可用</span><br><span class="line">n &lt;&lt; m -&gt; 计算 n*(2^m)，即乘以 2 的 m 次方</span><br><span class="line">n &gt;&gt; m -&gt; 计算 n&#x2F;(2^m)，即除以 2 的 m 次方</span><br><span class="line">1 &lt;&lt; n -&gt; 2^n</span><br></pre></td></tr></table></figure></li>
+<li>通过<code>^</code>快速交换两个整数<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a ^= b</span><br><span class="line">b ^= a</span><br><span class="line">a ^= b</span><br></pre></td></tr></table></figure></li>
+<li>通过<code>a &amp; (-a)</code>快速获取<code>a</code>的最后为1位置的整数 </li>
+</ul>
+<h3 id="2-4-利用位运算实现整数集合"><a href="#2-4-利用位运算实现整数集合" class="headerlink" title="2.4 利用位运算实现整数集合"></a>2.4 利用位运算实现整数集合</h3><ul>
+<li>元素与集合的操作<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a | (1&lt;&lt;i) -&gt; 把 i 插入到集合中</span><br><span class="line">a &amp; ~(1&lt;&lt;i) -&gt; 把 i 从集合中删除</span><br><span class="line">a &amp; (1&lt;&lt;i) -&gt;判断i是否属于该集合（零不属于，非零属于）</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<h2 id="三、习题"><a href="#三、习题" class="headerlink" title="三、习题"></a>三、习题</h2><p><strong>3.1 怎样对python中的代码进行注释？</strong><br><code>#</code> 单行注释<br><code>&quot;&quot;&quot; &quot;&quot;&quot;</code> 或 <code>&#39;&#39;&#39; &#39;&#39;&#39;</code> 区间注释</p>
+<p><strong>3.2 python有哪些运算符，这些运算符的优先级是怎样的？</strong><br>算数运算符、比较运算符、逻辑运算符、位运算符等<br>a. 一元运算符优于二元运算符。如正负号。<br>b. 先算术运算，后移位运算，最后位运算。<br>c. 逻辑运算最后结合</p>
+<p><strong>3.3 python 中 <code>is</code> , <code>is not</code> 与<code>==</code> , <code>!=</code> 的区别是什么？</strong><br><code>is</code>和<code>is not</code>比较的是两个变量的内存地址,相对比<code>==</code>、<code>！=</code>比较的是两个变量的值。</p>
+<p><strong>3.4 python 中包含哪些数据类型？这些数据类型之间如何转换？</strong><br>int float bool<br>转换为整型 int(x, base=10)<br>转换为字符串 str(object=’’)<br>转换为浮点型 float(x)</p>
+<p><strong>3.5 leetcode 习题136 只出现一次的数字<br>给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。<br>尝试使用位运算解决此题。</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">singleNumber</span><span class="params">(self, nums: List[int])</span> -&gt; int:</span></span><br><span class="line">        res=<span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> nums:</span><br><span class="line">            res ^= i</span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
  
       <!-- reward -->
       
