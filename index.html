@@ -76,6 +76,60 @@
     
     
     <article
+  id="post-Python-Task03-异常处理"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/07/25/Python-Task03-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"
+    >Python-Task03-异常处理</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/07/25/Python-Task03-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" class="article-date">
+  <time datetime="2020-07-24T16:59:02.000Z" itemprop="datePublished">2020-07-25</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+<h3 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">a=random.randint(<span class="number">0</span>,<span class="number">100</span>)</span><br><span class="line">count=<span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        num=int(input(<span class="string">"第"</span>+str(count)+<span class="string">"次猜，请输入一个整数:"</span>))</span><br><span class="line">        <span class="keyword">if</span> num&lt;<span class="number">0</span> <span class="keyword">or</span> num&gt;<span class="number">100</span>:</span><br><span class="line">            <span class="keyword">raise</span> Exception(<span class="string">'输入无效'</span>)</span><br><span class="line">        <span class="keyword">if</span> num&lt;a:</span><br><span class="line">            print(<span class="string">'太小'</span>)</span><br><span class="line">        <span class="keyword">elif</span> num&gt;a:</span><br><span class="line">            print(<span class="string">'太大'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">'Bingo!'</span>)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> error:</span><br><span class="line">        print(error)</span><br><span class="line">    count +=<span class="number">1</span></span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
   id="post-Python-Task02-条件循环结构"
   class="article article-type-post"
   itemscope
