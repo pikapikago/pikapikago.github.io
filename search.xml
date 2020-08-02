@@ -424,4 +424,30 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Python-Task06-函数与Lambda表达式</title>
+    <url>/2020/08/02/Python-Task06-%E5%87%BD%E6%95%B0%E4%B8%8ELambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
+    <content><![CDATA[<p>稀里糊涂</p>
+<a id="more"></a>
+
+<p>1.给函数编写文档</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">MyFunction</span><span class="params">(name)</span>:</span></span><br><span class="line">    <span class="string">"函数文档"</span></span><br><span class="line">    print(<span class="string">"传递来的参数内容&#123;0&#125;是"</span>.format(name))</span><br><span class="line">MyFunction(<span class="string">"helo world"</span>)</span><br><span class="line">help(MyFunction)</span><br></pre></td></tr></table></figure>
+
+<p>2.怎么给函数参数和返回值注解<br>说明函数参数和返回值类型、意义</p>
+<p>3.闭包中，怎么对数字、字符串、元组等不可变元素更新。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def outer():</span><br><span class="line">    num &#x3D; 10</span><br><span class="line"></span><br><span class="line">    def inner():</span><br><span class="line">        nonlocal num  # nonlocal关键字声明</span><br><span class="line">        num &#x3D; 100</span><br><span class="line">        print(num)</span><br><span class="line"></span><br><span class="line">    inner()</span><br><span class="line">    print(num)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">outer()</span><br></pre></td></tr></table></figure>
+
+<p>4.分别根据每一行的首元素和尾元素大小对二维列表 a = [[6, 5], [3, 7], [2, 8]] 排序。(利用lambda表达式)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = [[<span class="number">6</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">7</span>], [<span class="number">2</span>, <span class="number">8</span>]]</span><br><span class="line">a.sort(key=<span class="keyword">lambda</span> x: x[<span class="number">0</span>])</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+
+<p>5.有a、b、c三根柱子，在a柱子上从下往上按照大小顺序摞着64片圆盘，把圆盘从下面开始按大小顺序重新摆放在c柱子上，尝试用函数来模拟解决的过程。（提示：将问题简化为已经成功地将a柱上面的63个盘子移到了b柱）</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
 </search>
