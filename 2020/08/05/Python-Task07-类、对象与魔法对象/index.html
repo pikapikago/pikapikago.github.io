@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Python-Task06-函数与Lambda表达式 |  进击的皮卡丘
+    Python-Task07-类、对象与魔法对象 |  进击的皮卡丘
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -42,7 +42,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Python-Task06-函数与Lambda表达式"
+  id="post-Python-Task07-类、对象与魔法对象"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -53,15 +53,15 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Python-Task06-函数与Lambda表达式
+  Python-Task07-类、对象与魔法对象
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/08/02/Python-Task06-%E5%87%BD%E6%95%B0%E4%B8%8ELambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="article-date">
-  <time datetime="2020-08-02T14:12:24.000Z" itemprop="datePublished">2020-08-02</time>
+      <a href="/2020/08/05/Python-Task07-%E7%B1%BB%E3%80%81%E5%AF%B9%E8%B1%A1%E4%B8%8E%E9%AD%94%E6%B3%95%E5%AF%B9%E8%B1%A1/" class="article-date">
+  <time datetime="2020-08-05T14:19:41.000Z" itemprop="datePublished">2020-08-05</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
@@ -72,7 +72,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">257</span>
+            <span class="post-count">334</span>
         </span>
     </span>
 
@@ -94,21 +94,26 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>稀里糊涂</p>
+  <p>拖延症晚期无药可救</p>
 <a id="more"></a>
+<p>一、按照以下要求定义一个游乐园门票的类，并尝试计算2个成人+1个小孩平日票价。</p>
+<ol>
+<li>平日票价100元</li>
+<li>周末票价为平日的120%</li>
+<li>儿童票半价</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Ticket</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, workday = True, adult = True)</span>:</span></span><br><span class="line">        self.price = <span class="number">100</span></span><br><span class="line">        <span class="keyword">if</span> workday:</span><br><span class="line">            self.ratio = <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.ratio = <span class="number">1.2</span></span><br><span class="line">        <span class="keyword">if</span> adult:</span><br><span class="line">            self.discount = <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.discount = <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_price</span><span class="params">(self, num)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.price * self.ratio * self.discount * num</span><br><span class="line"></span><br><span class="line">adult1 = Ticket(<span class="literal">True</span>, <span class="literal">True</span>)</span><br><span class="line">child1 = Ticket(<span class="literal">True</span>, <span class="literal">False</span>)</span><br><span class="line">print(<span class="string">"2个成人+1个小孩平日票价为%.2f"</span> %(adult1.get_price(<span class="number">2</span>) + child1.get_price(<span class="number">1</span>)))</span><br></pre></td></tr></table></figure>
 
-<p>1.给函数编写文档</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">MyFunction</span><span class="params">(name)</span>:</span></span><br><span class="line">    <span class="string">"函数文档"</span></span><br><span class="line">    print(<span class="string">"传递来的参数内容&#123;0&#125;是"</span>.format(name))</span><br><span class="line">MyFunction(<span class="string">"helo world"</span>)</span><br><span class="line">help(MyFunction)</span><br></pre></td></tr></table></figure>
-
-<p>2.怎么给函数参数和返回值注解<br>说明函数参数和返回值类型、意义</p>
-<p>3.闭包中，怎么对数字、字符串、元组等不可变元素更新。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">def outer():</span><br><span class="line">    num &#x3D; 10</span><br><span class="line"></span><br><span class="line">    def inner():</span><br><span class="line">        nonlocal num  # nonlocal关键字声明</span><br><span class="line">        num &#x3D; 100</span><br><span class="line">        print(num)</span><br><span class="line"></span><br><span class="line">    inner()</span><br><span class="line">    print(num)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">outer()</span><br></pre></td></tr></table></figure>
-
-<p>4.分别根据每一行的首元素和尾元素大小对二维列表 a = [[6, 5], [3, 7], [2, 8]] 排序。(利用lambda表达式)</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = [[<span class="number">6</span>, <span class="number">5</span>], [<span class="number">3</span>, <span class="number">7</span>], [<span class="number">2</span>, <span class="number">8</span>]]</span><br><span class="line">a.sort(key=<span class="keyword">lambda</span> x: x[<span class="number">0</span>])</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
-
-<p>5.有a、b、c三根柱子，在a柱子上从下往上按照大小顺序摞着64片圆盘，把圆盘从下面开始按大小顺序重新摆放在c柱子上，尝试用函数来模拟解决的过程。（提示：将问题简化为已经成功地将a柱上面的63个盘子移到了b柱）</p>
- 
+<p>二、利用python做一个简单的定时器类<br>要求:</p>
+<ol>
+<li>定制一个计时器的类。</li>
+<li>start 和 stop 方法代表启动计时和停止计时。</li>
+<li>假设计时器对象 t1 ， print(t1) 和直接调用 t1 均显示结果。</li>
+<li>当计时器未启动或已经停止计时时，调用 stop 方法会给予温馨的提示。</li>
+<li>两个计时器对象可以进行相加： t1+t2 。</li>
+<li>只能使用提供的有限资源完成。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Timer</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,time)</span>:</span></span><br><span class="line">        self.time = time</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">start</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            self.time+=<span class="number">1</span></span><br><span class="line">            time.sleep(<span class="number">1</span>)</span><br><span class="line">            <span class="keyword">if</span> self.time == <span class="number">4</span>:</span><br><span class="line">                self.stop()</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">stop</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"计时器已经停止了"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__add__</span><span class="params">(self,others)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> Timer(self.time+others.time)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">"当前的时间为 %d"</span>%(self.time)</span><br><span class="line">timer = Timer(<span class="number">0</span>)</span><br><span class="line">timer.start()</span><br><span class="line">print(timer)</span><br><span class="line">timer2 = Timer(<span class="number">1</span>)</span><br><span class="line">timer2.start()</span><br><span class="line">print(timer2)</span><br><span class="line">print(timer+timer2)</span><br></pre></td></tr></table></figure> 
       <!-- reward -->
       
     </div>
@@ -170,7 +175,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/08/02/Python-Task06-%E5%87%BD%E6%95%B0%E4%B8%8ELambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/08/05/Python-Task07-%E7%B1%BB%E3%80%81%E5%AF%B9%E8%B1%A1%E4%B8%8E%E9%AD%94%E6%B3%95%E5%AF%B9%E8%B1%A1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -183,19 +188,10 @@
    
   <nav class="article-nav">
     
-      <a href="/2020/08/05/Python-Task07-%E7%B1%BB%E3%80%81%E5%AF%B9%E8%B1%A1%E4%B8%8E%E9%AD%94%E6%B3%95%E5%AF%B9%E8%B1%A1/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            Python-Task07-类、对象与魔法对象
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/07/31/Python-Task05-%E5%AD%97%E5%85%B8%E3%80%81%E9%9B%86%E5%90%88%E5%92%8C%E5%BA%8F%E5%88%97/" class="article-nav-link">
+      <a href="/2020/08/02/Python-Task06-%E5%87%BD%E6%95%B0%E4%B8%8ELambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Python-Task05-字典、集合和序列</div>
+        <div class="article-nav-title">Python-Task06-函数与Lambda表达式</div>
       </a>
     
   </nav>
