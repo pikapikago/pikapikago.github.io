@@ -505,4 +505,17 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Python-Task09-文件与文件系统</title>
+    <url>/2020/08/09/Python-Task09-%E6%96%87%E4%BB%B6%E4%B8%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<p>编写程序查找最长的单词</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">f=open(<span class="string">'test.txt'</span>)</span><br><span class="line">lines=f.readlines()</span><br><span class="line">wordlst=[]</span><br><span class="line"><span class="keyword">for</span> each <span class="keyword">in</span> lines:</span><br><span class="line">    each=re.compile(<span class="string">r'\b[a-zA-Z]+\b'</span>,re.I).findall(each)</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> each:</span><br><span class="line">        wordlst.append(word)</span><br><span class="line">print(wordlst)</span><br><span class="line">count=<span class="number">0</span></span><br><span class="line">lon_w=<span class="string">"a"</span></span><br><span class="line"><span class="keyword">for</span> word <span class="keyword">in</span> wordlst:</span><br><span class="line">    <span class="keyword">if</span> len(word)&gt;count:</span><br><span class="line">        count=len(word)</span><br><span class="line">        lon_w=word</span><br><span class="line"><span class="keyword">print</span> (count,lon_w)</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
 </search>
